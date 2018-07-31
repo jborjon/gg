@@ -9,8 +9,8 @@
 # this module.
 
 """This file contains some basic colors for you to use in your game if
-you so choose. Pygame contains many more colors if you are willing to
-type more.
+you so choose. Or you can use colors from the huge list included with
+Pygame, or type your own. Up to you.
 """
 
 BLACK = (0, 0, 0)

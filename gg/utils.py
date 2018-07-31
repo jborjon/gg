@@ -22,12 +22,13 @@ def _load_image(file_name, directory=None, dest_object_name=None):
     If an image can't be loaded for any reason (usually because the file
     or folder name specified is misspelled or the file itself is
     missing), return instead a small red square with a white question
-    mark inside.
+    mark inside - the dreaded Red Square of Doom.
 
     The optional dest_object_name parameter is used for printing the
-    name of the object that didn't receive the proper image if the file
-    retrieval fails. It is recommended to use the proper article in the
-    string passed, as in "the player" or "a full-screen image".
+    name of the object that didn't receive the proper image in an error
+    message if file retrieval fails. It is recommended to use the proper
+    article in the string passed, as in "the player" or "a full-screen
+    image".
     """
     # Try to load the image through pygame
     try:

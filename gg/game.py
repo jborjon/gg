@@ -30,7 +30,7 @@ class Game:
 
     Modifiable attributes:
 
-    -name: the name of the game, displayed on the game title bar.
+    -name: the name of the game, displayed on the window title bar.
     -images_dir: the name of the directory where the images are.
     -window_icon: file name of the icon to display next to the name.
     -splash_image: the image that covers the screen at the beginning.
