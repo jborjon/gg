@@ -84,7 +84,7 @@ game.player_num_shots = 10
 game.is_fullscreen = True
 ```
 
-You can see the full list of attributes under the section called... well, "Full attribute and method list."
+You can see the full list of attributes under the section called... well, [Full attribute and method list](#full-attribute-and-method-list).
 
 All attributes other than image files come with useful defaults, so you don't *have* to set any non-image attributes, but it's way more fun if you make the game your very own.
 
@@ -101,16 +101,16 @@ game.run()
 That's it! When you run your Python game file, your game should start.
 
 
-### Highscore
+### High score
 
-After the first time a player attains a score greater than 0, the game will automatically create a folder called `gamedata` to save that score as the highscore. You don't need to worry about this folder or its contents; the highscore will be automatically updated as needed.
+After the first time a player attains a score greater than 0, the game will automatically create a folder called `gamedata` to save that score as the high score. You don't need to worry about this folder or its contents; the high score will be automatically updated as needed.
 
-To reset the highscore to 0, simply delete the folder.
+To reset the high score to 0, simply delete the folder.
 
 
 ## Full attribute and method list
 
-The following are all the attributes you can modify to make the game your own. Most likely, you'll only need to modify a handful of these to get the results want, but all of them are there for you to play with to your heart's content. You'll see that you are not limited to making a game in the way I described under "What's a Flak game?" Be creative and break boundaries.
+The following are all the attributes you can modify to make the game your own. Most likely, you'll only need to modify a handful of these to get the results want, but all of them are there for you to play with to your heart's content. You'll see that you are not limited to making a game in the way I described under [What's a Flak game?](#whats-a-flak-game) Be creative and break boundaries.
 
 | Attribute | Description | Type | Default value |
 | --- | --- | --- | --- |
