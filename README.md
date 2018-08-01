@@ -72,9 +72,9 @@ Then create a variable to contain the game. For simplicity, let's call it `game`
 game = gg.Game()
 ```
 
-This variable contains your entire game environment: the player, enemies, images, text, behaiors, etc.
+This variable contains your entire game environment: the player, enemies, images, text, behaviors, etc.
 
-Next, customize your game at will by modifying whatever **attributes** of `game` you wish to customize (there are a lot, and they're listed under "Full attribute and method list") using the `variable_name.attribute_name = attribute_value` syntax (notice the period or dot), often called "dot notation":
+Next, customize your game at will by modifying whatever **attributes** of `game` you wish to customize using the `variable_name.attribute_name = attribute_value` syntax (notice the period or dot), often called "dot notation":
 
 ```python
 game.name = 'My Shiny Flak Game'
@@ -83,6 +83,8 @@ game.enemy_image = 'bad-guy.png'
 game.player_num_shots = 10
 game.is_fullscreen = True
 ```
+
+You can see the full list of attributes under the section called... well, "Full attribute and method list."
 
 All attributes other than image files come with useful defaults, so you don't *have* to set any non-image attributes, but it's way more fun if you make the game your very own.
 
