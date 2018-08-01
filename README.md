@@ -169,6 +169,8 @@ There is a single method (function) you need to call:
 
 Mr. [Joseph Borjon](https://www.linkedin.com/in/josephborjon), Young Engineers teacher at Madison Middle School.
 
+Feel free to contact me if you run into any issues. Email: work@josephborjon.com.
+
 
 ## License
 
@@ -177,7 +179,7 @@ You may modify and redistribute this project under certain restrictions; see the
 
 ## Contributing
 
-If you make any changes or improvements to any part of this code, I'd love to know about it. We may even add it to the main branch. Please contact me via [LinkedIn](https://www.linkedin.com/in/josephborjon) or email at work@josephborjon.com.
+If you discover bugs, make any changes or improvements, or decide to address any if the project issues, I'd love to know about it. We may even add it to the main branch. Please contact me via [LinkedIn](https://www.linkedin.com/in/josephborjon) or email at work@josephborjon.com.
 
 
 ## Special thanks
