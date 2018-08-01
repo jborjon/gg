@@ -108,7 +108,7 @@ To reset the highscore to 0, simply delete the folder.
 
 ## Full attribute and method list
 
-The following are all the attributes you can modify to make the game your own. Most likely, you'll only need to modify a handful of these to get the results want, but all of them are there for you to play with. You'll see that you are not limited to making a game in the way I described under "What's a Flak game?" Be creative and break boundaries.
+The following are all the attributes you can modify to make the game your own. Most likely, you'll only need to modify a handful of these to get the results want, but all of them are there for you to play with to your heart's content. You'll see that you are not limited to making a game in the way I described under "What's a Flak game?" Be creative and break boundaries.
 
 | Attribute | Description | Type | Default value |
 | --- | --- | --- | --- |
