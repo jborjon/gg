@@ -60,7 +60,7 @@ GG can handle PNG, JPG, GIF, and all other [image formats supported by Pygame](h
 
 #### Programming
 
-After putting the `gg` folder in the location of your choice, create a new `.py` file (you could call it `flak.py`, for example) in your folder and import the GG package:
+After putting the `gg` folder in the location of your choice, create a new `.py` file (you could call it `flak.py`, for example) in your folder and import the GG package from the top of the file:
 
 ```python
 import gg
@@ -106,12 +106,12 @@ After the first time a player attains a score greater than 0, the game will auto
 To reset the highscore to 0, simply delete the folder.
 
 
-## Full attribute list
+## Full attribute and method list
 
 The following are all the attributes you can modify to make the game your own. You'll see that you are not limited to making a game in the way I described under "What's a Flak game?" Be creative and break boundaries.
 
 | Attribute | Description | Type | Default value |
-| --- | --- | --- | ---: |
+| --- | --- | --- | --- |
 | `name` | The name of the game, displayed on the window title bar, if there is one. | String | `'GG Flak'` |
 | `images_dir` | The path of the directory where the images are. | String | `None` |
 | `window_icon` | File name of the icon to display next to the name. | String | `None` |
