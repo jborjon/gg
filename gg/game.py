@@ -31,7 +31,7 @@ class Game:
     Modifiable attributes:
 
     -name: the name of the game, displayed on the window title bar.
-    -images_dir: the name of the directory where the images are.
+    -images_dir: the path of the directory where the images are.
     -window_icon: file name of the icon to display next to the name.
     -splash_image: the image that covers the screen at the beginning.
     -screen_width: the window width in pixels if not fullscreen.
@@ -50,7 +50,7 @@ class Game:
     -has_player_sprite_dir: flip the player sprite when moving?
     -missile_image: the image file for the missile fired by the player.
     -missile_speed: how fast the player missile travels.
-    -is_missile_upward: does the missile move upward? Down otherwise.
+    -is_missile_upward: does the missile move up or down? Up if true.
     -enemy_image: the image for all the enemy objects.
     -enemy_speed: how fast the enemy airplanes move.
     -enemy_count: max number of enemies on the screen at any given time.
@@ -58,14 +58,15 @@ class Game:
     -enemy_bottom_edge: bottom of the boundary where enemies can spawn.
     -bomb_image: the image file for the bomb dropped by the enemy.
     -bomb_speed: how fast the enemy bombs travel.
-    -is_bomb_downward: does the bomb move downward? Up otherwise.
+    -is_bomb_downward: does the bomb move down or up? Down if true.
     -building_image: the image file for the ground structure objects.
     -building_razed_image: optional image for buildings that are hit.
-    -building_count: how many buildings to have on the screen.
+    -building_count: how many buildings to start game with. Must be > 1.
+    -building_y_pos: y-coordinate of buildings; None means near bottom.
     -score_pos: the position where the score is displayed on the screen.
     -score_factor: how many points the player gets per hit.
-    -score_loss_factor: points lost when a building is razed.
-    -high_score_pos: the position where the high score is displayed.
+    -score_loss_factor: points lost when a building is destroyed.
+    -high_score_pos: where to display highscore; None means top-center.
     -num_lives_pos: the location of the player's remaining lives panel.
     -num_shots_pos: the location of the player's remaining shots panel.
     -thumbnails_height: the height of the lives and shots thumbnails.

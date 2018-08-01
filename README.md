@@ -9,9 +9,7 @@ Flak, the style of game supported by GG, consists of a player on the ground (the
 
 The player gets a number of points for hitting enemies and bombs, and loses points when ground structures are destroyed by bombs. There is an unlimited number of enemy planes, who will continue to spawn as long as the game is running. Once all the buildings are destroyed or the player has lost all her lives, the game is over. The only way to win? Beat the high score.
 
-In case you're itching to know: Flak is short for *Flugzeugabwehrkanone* (say it fast 10 times), which is German for "aircraft defense cannon." Anti-aircraft artillery. This stuff:
-
-![Flak being fired](https://upload.wikimedia.org/wikipedia/commons/1/13/Antiaircraft_defence_Sweden_1934.jpg)
+In case you're itching to know: Flak is short for *Flugzeugabwehrkanone* (say it fast 10 times), which is German for "aircraft defense cannon." Anti-aircraft artillery.
 
 
 ## Getting Started
@@ -42,21 +40,15 @@ For your game to look like a game, it needs images. These images are used to dre
 Using any drawing program that can save images, create a separate file for each of the following items:
 
   * The player
-
   * The enemy (a single enemy image will be applied to all the enemies, so you only need to draw it once)
-
   * The missile fired by the player
-
   * A bomb dropped by the enemy
-
   * A ground building
 
 There are also optional images you can draw, with no consequences if you don't:
 
   * The background (try to get the size in pixels as close as possible to the way you want it in the game)
-
   * A destroyed building to display when a building gets hit
-
   * A splash screen, possibly with your logo and credits, displayed before the game starts
 
 Save your images with a descriptive file name in the same folder as your game code or, as I would recommend, in its own subfolder within the game folder.
@@ -112,101 +104,56 @@ That's it! When you run your Python game file, your game should start.
 The following are all the attributes you can modify to make the game your own. You'll see that you are not limited to making a game in the way I described under "What's a Flak game?" Be creative and break boundaries.
 
 | Attribute | Description | Type | Default value |
-| --- | --- | --- | --- |
+| --- | --- | --- | ---: |
 | `name` | The name of the game, displayed on the window title bar, if there is one. | String | `'GG Flak'` |
-| `images_dir` | The name of the directory where the images are. | String | `None` |
+| `images_dir` | The path of the directory where the images are. | String | `None` |
+| `window_icon` | File name of the icon to display next to the name. | String | `None` |
+| `splash_image` | The image that covers the screen at the beginninng. | String | `None` |
+| `screen_width` | The window width in pixels if not fullscreen. | Number | `800` |
+| `aspect_ratio` | The aspect ratio of the window if not fullscreen. | Number | `1.7778` |
+| `is_fullscreen` | Whether the window covers the entire screen. | Boolean | `False` |
+| `font_color` | The color of the text that appears on the screen. | Tuple | `gg.colors.WHITE` |
+| `screen_font_size` | The point size of the info text on the screen. | Number | `36` |
+| `background_color` | A solid color used if no image is specified. | Tuple | `gg.colors.BLACK` |
+| `background_image` | File name of the image to put as background. | String | `None` |
+| `player_image` | The image file for the player object. | String | `None` |
+| `player_num_lives` | Number of tries the player gets before losing. | Number | `3` |
+| `player_num_shots` | Number of shots per reload. 0 means no reloading. | Number | `10` |
+| `player_speed` | How far the player moves left or right in one second. | Number | `800` |
+| `player_x_pos` | The initial x-coordinate of the player's top left. | Number | `None` |
+| `player_y_pos` | The initial y-coordinate of the player's top left. | Number | `None` |
+| `has_player_sprite_dir` | Flip the player sprite when moving? | Boolean | `True` |
+| `missile_image` | The image file for the missile fired by the player | String | `None` |
+| `missile_speed` | How fast the player missile travels. | Number | `2000` |
+| `is_missile_upward` | Does the missile move up or down? Up if true. | Boolean | `True` |
+| `enemy_image` | The image for all the enemy objects. | String | `None` |
+| `enemy_speed` | How fast the enemy airplanes move. | Number | `600` |
+| `enemy_count` | Max number of enemies on the screen at any given time. | Number | `5` |
+| `enemy_top_edge` | Top of the boundary where enemies can spawn. | Number | `None` |
+| `enemy_bottom_edge` | Bottom of the boundary where enemies can spawn. | Number | `None` |
+| `bomb_image` | The image file for the bomb dropped by the enemy. | String | `None` |
+| `bomb_speed` | How fast the enemy bombs travel. | Number | `800` |
+| `is_bomb_downward` | Does the bomb move down or up? Down if true. | Boolean | `True` |
+| `building_image` | The image file for the ground structure objects. | String | `None` |
+| `building_razed_image` | Optional image for buildings that are hit. | String | `None` |
+| `building_count` | How many buildings to start game with. Must be > 1. | Number | `4` |
+| `building_y_pos` | Y-coordinate of buildings; None means near bottom. | Number | `None` |
+| `score_pos` | The position where the score is displayed on the screen. | Tuple | `(10, 10)` |
+| `score_factor` | How many points the player gets per hit. | Number | `1` |
+| `score_loss_factor` | Points lost when a building is destroyed. | Number | `10` |
+| `high_score_pos` | Where to display highscore; None means top-center. | Tuple | `None` |
+| `num_lives_pos` | The location of the player's remaining lives panel. | Tuple | `(10, 40)` |
+| `num_shots_pos` | The location of the player's remaining shots panel. | Tuple | `(10, 74)` |
+| `thumbnails_height` | The height of the lives and shots thumbnails. | Number | `24` |
+| `message_high_score` | Message to show when the player gets highscore. | String | `'You beat the high score!'` |
+| `message_game_over` | Message to show when the player loses. | String | `'Game over'` |
+| `keys_move_left` | List of keys that move the player left. | List | `[pygame.K_LEFT]` |
+| `keys_move_right` | List of keys that move the player right. | List | `[pygame.K_RIGHT]` |
+| `keys_shoot` | List of keys that fire the missile. | List | `[pygame.K_SPACE]` |
+| `keys_reload_ammo` | List of keys that reload the ammo when out. | List | `[pygame.K_LCTRL, pygame.K_RCTRL]` |
+| `keys_pause` | List of keys that pause the game. | List | `[pygame.K_p, pygame.K_PAUSE]` |
 
-  * `images_dir`: the name of the directory where the images are. Default: `None`.
-
-  * `window_icon`: file name of the icon to display next to the name. Default: `None`.
-
-  * `splash_image`: the image that covers the screen at the beginning. Default: `None`.
-
-  * `screen_width`: the window width in pixels if not fullscreen. Default: `800`.
-
-  * `aspect_ratio`: the aspect ratio of the window if not fullscreen. Default: `1.7778`.
-
-  * `is_fullscreen`: whether the window covers the entire screen. Default: `False`.
-
-  * `font_color`: the color of the text that appears on the screen. Default: `gg.colors.WHITE`.
-
-  * `screen_font_size`: the point size of the info text on the screen. Default: `36`.
-
-  * `background_color`: a solid color used if no image is specified. Default: `gg.colors.BLACK`.
-
-  * `background_image`: file name of the image to put as background. Default: `None`.
-
-  * `player_image`: the image file for the player object. Default: `None`.
-
-  * `player_num_lives`: number of tries the player gets before losing. Default: `3`.
-
-  * `player_num_shots`: number of shots per reload. 0 means no reloading. Default: `10`.
-
-  * `player_speed`: how far the player moves left or right in one second. Default: `800`.
-
-  * `player_x_pos`: the initial x-coordinate of the player's top left. Default: ``.
-
-  * `player_y_pos`: the initial y-coordinate of the player's top left. Default: ``.
-
-  * `has_player_sprite_dir`: flip the player sprite when moving? Default: ``.
-
-  * `missile_image`: the image file for the missile fired by the player. Default: ``.
-
-  * `missile_speed`: how fast the player missile travels. Default: ``.
-
-  * `is_missile_upward`: does the missile move upward? Down otherwise. Default: ``.
-
-  * `enemy_image`: the image for all the enemy objects. Default: ``.
-
-  * `enemy_speed`: how fast the enemy airplanes move. Default: ``.
-
-  * `enemy_count`: max number of enemies on the screen at any given time. Default: ``.
-
-  * `enemy_top_edge`: top of the boundary where enemies can spawn. Default: ``.
-
-  * `enemy_bottom_edge`: bottom of the boundary where enemies can spawn. Default: ``.
-
-  * `bomb_image`: the image file for the bomb dropped by the enemy. Default: ``.
-
-  * `bomb_speed`: how fast the enemy bombs travel. Default: ``.
-
-  * `is_bomb_downward`: does the bomb move downward? Up otherwise. Default: ``.
-
-  * `building_image`: the image file for the ground structure objects. Default: ``.
-
-  * `building_razed_image`: optional image for buildings that are hit. Default: ``.
-
-  * `building_count`: how many buildings to have on the screen. Must be > 1 Default: ``.
-
-  * `score_pos`: the position where the score is displayed on the screen. Default: ``.
-
-  * `score_factor`: how many points the player gets per hit. Default: ``.
-
-  * `score_loss_factor`: points lost when a building is razed. Default: ``.
-
-  * `high_score_pos`: the position where the high score is displayed. Default: ``.
-
-  * `num_lives_pos`: the location of the player's remaining lives panel. Default: ``.
-
-  * `num_shots_pos`: the location of the player's remaining shots panel. Default: ``.
-
-  * `thumbnails_height`: the height of the lives and shots thumbnails. Default: ``.
-
-  * `message_high_score`: message to show when the player gets highscore. Default: ``.
-
-  * `message_game_over`: message to show when the player loses. Default: ``.
-
-  * `keys_move_left`: list of keys that move the player left. Default: ``.
-
-  * `keys_move_right`: list of keys that move the player right. Default: ``.
-
-  * `keys_shoot`: list of keys that fire the missile. Default: ``.
-
-  * `keys_reload_ammo`: list of keys that reload the ammo when out. Default: ``.
-
-  * `keys_pause`: list of keys that pause the game. Default: ``.
-
-There is a single method (function) you can call:
+There is a single method (function) you need to call:
 
   * `run()`: once all the modifiable attributes are set as desired, call this method to start the game.
 
