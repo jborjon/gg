@@ -28,7 +28,7 @@ The `gg` folder contains the full GameGenerator package; you might say it *is* t
 
 ### Example game
 
-The `flak_example.py` file contains a full working game. Okay, not a very good one, but one you can still use for reference. The background and splash screen images were created using Scratch.
+The `flak_example.py` file contains a full working game. Okay, not a very good one, but one you can still use for reference. The images required by the example game are in the `example_pics` folder. The background and splash screen images were created using nothing but Scratch.
 
 
 ### Creating your first game
@@ -97,6 +97,13 @@ game.run()
 ```
 
 That's it! When you run your Python game file, your game should start.
+
+
+#### Highscore
+
+After the first time a player attains a score greater than 0, the game will automatically create a folder called `gamedata` to save that score as the highscore. You don't need to worry about this folder or its contents; the highscore will be automatically updated as needed.
+
+To reset the highscore to 0, simply delete the folder.
 
 
 ## Full attribute list
