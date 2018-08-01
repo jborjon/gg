@@ -28,7 +28,7 @@ The `gg` folder contains the full GameGenerator package; you might say it *is* t
 
 ### Example game
 
-The `flak_example.py` file contains a working game. Okay, not a very good one, but one you can still use for reference. The images required by the example game are in the `example_pics` folder. The background and splash screen images were created using nothing but Scratch.
+The `flak_example.py` file in this repository contains a working game. Okay, not a very good one, but one you can still use for reference. The images required by the example game are in the `example_pics` folder. The background and splash screen images were created using nothing but Scratch.
 
 
 ### Creating your first game
