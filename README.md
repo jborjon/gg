@@ -99,7 +99,7 @@ game.run()
 That's it! When you run your Python game file, your game should start.
 
 
-#### Highscore
+### Highscore
 
 After the first time a player attains a score greater than 0, the game will automatically create a folder called `gamedata` to save that score as the highscore. You don't need to worry about this folder or its contents; the highscore will be automatically updated as needed.
 
