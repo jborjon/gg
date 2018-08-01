@@ -23,12 +23,12 @@ You need to have [Python 3.x](https://www.python.org/downloads) and [Pygame](htt
 
 The `gg` folder contains the full GameGenerator package; you might say it *is* the package. Copy that folder to your own game folder, or put it somewhere else and [add it to the Python path](https://www.digitalocean.com/community/tutorials/how-to-write-modules-in-python-3) using `sys.path.append(full_path_to_folder_containing_gg)` from the Python Shell.
 
-**Note to Madison Middle School students:** As of July 31, 2018, each Raspberry Pi in the Young Engineers classroom has a copy of `gg` in the `Documents` folder. Simply copy and paste the `gg` folder into your own folder to create games.
+*Note to Madison Middle School students:* As of July 31, 2018, each Raspberry Pi in the Young Engineers classroom has a copy of `gg` in the `Documents` folder. Simply copy and paste the `gg` folder into your own folder to create games.
 
 
 ### Example game
 
-The `flak_example.py` file contains a full working game. Okay, not a very good one, but one you can still use for reference. The images required by the example game are in the `example_pics` folder. The background and splash screen images were created using nothing but Scratch.
+The `flak_example.py` file contains a working game. Okay, not a very good one, but one you can still use for reference. The images required by the example game are in the `example_pics` folder. The background and splash screen images were created using nothing but Scratch.
 
 
 ### Creating your first game
@@ -55,12 +55,12 @@ Save your images with a descriptive file name in the same folder as your game co
 
 GG can handle PNG, JPG, GIF, and all other [image formats supported by Pygame](https://www.pygame.org/docs/ref/image.html). Make sure the sprite images are not so big that they cover the entire screen or make the game unplayable.
 
-**Note to Madison students:** Although I haven't found any good free Raspberry Pi software for creating images, you can use [Scratch](https://scratch.mit.edu) to draw sprites and backgrounds and then export them as images; or you can create images in a different computer and then bring them to class in a USB drive.
+*Note to Madison students:* Although I haven't found any good free Raspberry Pi software for creating images, you can use [Scratch](https://scratch.mit.edu) to draw sprites and backgrounds and then export them as images; or you can create images in a different computer and then bring them to class in a USB drive.
 
 
 #### Programming
 
-After putting the `gg` folder in the location of your choice, create a new `.py` file (you could call it `flak.py`, for example) and import the GG package:
+After putting the `gg` folder in the location of your choice, create a new `.py` file (you could call it `flak.py`, for example) in your folder and import the GG package:
 
 ```python
 import gg
@@ -72,7 +72,7 @@ Then create a variable to contain the game. For simplicity, let's call it `game`
 game = gg.Game()
 ```
 
-This variable contains your entire game environment: the player, enemies, images, ammo, etc.
+This variable contains your entire game environment: the player, enemies, images, text, behaiors, etc.
 
 Next, customize your game at will by modifying the **attributes** of `game` you wish to customize using the `variable_name.attribute_name = attribute_value` syntax (notice the period or dot), often called "dot notation":
 
