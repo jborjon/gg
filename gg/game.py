@@ -86,8 +86,6 @@ class Game:
 
     def __init__(self):
         """Set default values for all the game attributes."""
-        self.TARGET_FPS = 60
-
         # Modifiable game attributes
         self.name = 'GG Flak'
         self.images_dir = None
@@ -168,6 +166,7 @@ class Game:
         self._missile_thumbnails = []
         self._buildings_left = self.building_count
         self._clock = None
+        self.TARGET_FPS = 60
 
     def run(self):
         """Start the game and keep it going.

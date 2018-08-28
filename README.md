@@ -53,7 +53,7 @@ There are also optional images you can draw, with no consequences if you don't:
 
 Save your images with a descriptive file name in the same folder as your game code or, as I would recommend, in its own subfolder within the game folder.
 
-GG can handle PNG, JPG, GIF, and all other [image formats supported by Pygame](https://www.pygame.org/docs/ref/image.html). Make sure the sprite images are not so big that they cover the entire screen or make the game unplayable.
+GG can handle PNG, JPG, GIF, and all other [image formats supported by Pygame](https://www.pygame.org/docs/ref/image.html). Make sure the sprite images are not so big that they cover the entire screen or make the game unplayable, and that they have a transparent background.
 
 *Note to Madison students:* Although I haven't found any good free Raspberry Pi software for creating images, you can use [Scratch](https://scratch.mit.edu) to draw sprites and backgrounds and then export them as images; or you can create images in a different computer and then bring them to class in a USB drive.
 
@@ -101,11 +101,23 @@ game.run()
 That's it! When you run your Python game file, your game should start.
 
 
-### High score
+###  Playing the game
+
+#### High score
 
 After the first time a player attains a score greater than 0, the game will automatically create a folder called `gamedata` to save that score as the high score. You don't need to worry about this folder or its contents; the high score will be automatically updated as needed.
 
 To reset the high score to 0, simply delete the folder.
+
+
+#### Viewing the framerate
+
+If you're curious about the current framerate of your game, you can toggle displaying it by pressing F1. The maximum allowed framerate is 60 FPS and, since the graphics aren't complex, it will probably remain really close to that unless there is some issue.
+
+
+#### Closing the game
+
+You can close the game at any time by pressing the window's closing X icon (if not in fullscreen mode), the Esc key, or Alt+F4. A prompt will ask you to confirm.
 
 
 ## Full attribute and method list
