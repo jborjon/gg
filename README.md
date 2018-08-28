@@ -103,6 +103,19 @@ That's it! When you run your Python game file, your game should start.
 
 ###  Playing the game
 
+#### Default keys
+
+To play the game with its default set of keys, you'll need to know the following:
+
+  * Move left: left arrow
+  * Move right: right arrow
+  * Shoot: space
+  * Reload ammo: control
+  * Pause the game: P or pause
+
+All these keys are available for you to change. See [Changing default keys](#changing-default-keys) for details.
+
+
 #### High score
 
 After the first time a player attains a score greater than 0, the game will automatically create a folder called `gamedata` to save that score as the high score. You don't need to worry about this folder or its contents; the high score will be automatically updated as needed.
@@ -177,6 +190,13 @@ The following are all the attributes you can modify to make the game your own. M
 There is a single method (function) you need to call:
 
   * `run()`: once all the modifiable attributes are set as desired, call this method to start the game.
+
+
+### Changing default keys
+
+To change the default keys used to play the game, you must provide a list of keys as the attribute for a given behavior, even if your list contains a single key; providing more than one key allows each of the keys specified to perform the action.
+
+See the [`pygame.key` documentation](https://www.pygame.org/docs/ref/key.html) for a list of key names under Pygame. All key names begin with `K_` and must be prefixed with `pygame.` since they are internal to Pygame, which, in turn, means you need to import the `pygame` module into your game to be able to modify default keys.
 
 
 ## Author

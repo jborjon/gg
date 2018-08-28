@@ -190,17 +190,33 @@ game.is_fullscreen = True</code></pre>
 <p>That’s it! When you run your Python game file, your game should start.</p>
 </div>
 </div>
-<div id="high-score" class="section level3">
-<h3>High score</h3>
+<div id="playing-the-game" class="section level3">
+<h3>Playing the game</h3>
+<div id="default-keys" class="section level4">
+<h4>Default keys</h4>
+<p>To play the game with its default set of keys, you’ll need to know the following:</p>
+<ul>
+<li>Move left: left arrow</li>
+<li>Move right: right arrow</li>
+<li>Shoot: space</li>
+<li>Reload ammo: control</li>
+<li>Pause the game: P or pause</li>
+</ul>
+<p>All these keys are available for you to change. See <a href="#changing-default-keys">Changing default keys</a> for details.</p>
+</div>
+<div id="high-score" class="section level4">
+<h4>High score</h4>
 <p>After the first time a player attains a score greater than 0, the game will automatically create a folder called <code>gamedata</code> to save that score as the high score. You don’t need to worry about this folder or its contents; the high score will be automatically updated as needed.</p>
 <p>To reset the high score to 0, simply delete the folder.</p>
 </div>
-<div id="viewing-the-framerate" class="section level3">
-<h3>Viewing the framerate</h3>
-<p>If you’re curious about the framerate of your game at any time, you can toggle displaying it by pressing F1.</p>
+<div id="viewing-the-framerate" class="section level4">
+<h4>Viewing the framerate</h4>
+<p>If you’re curious about the current framerate of your game, you can toggle displaying it by pressing F1. The maximum allowed framerate is 60 FPS and, since the graphics aren’t complex, it will probably remain really close to that unless there is some issue.</p>
 </div>
-<div id="closing-the-game" class="section level3">
-<h3>Closing the game</h3>
+<div id="closing-the-game" class="section level4">
+<h4>Closing the game</h4>
+<p>You can close the game at any time by pressing the window’s closing X icon (if not in fullscreen mode), the Esc key, or Alt+F4. A prompt will ask you to confirm.</p>
+</div>
 </div>
 </div>
 <div id="full-attribute-and-method-list" class="section level2">
@@ -510,6 +526,11 @@ game.is_fullscreen = True</code></pre>
 <ul>
 <li><code>run()</code>: once all the modifiable attributes are set as desired, call this method to start the game.</li>
 </ul>
+<div id="changing-default-keys" class="section level3">
+<h3>Changing default keys</h3>
+<p>To change the default keys used to play the game, you must provide a list of keys as the attribute for a given behavior, even if your list contains a single key; providing more than one key allows each of the keys specified to perform the action.</p>
+<p>See the <a href="https://www.pygame.org/docs/ref/key.html"><code>pygame.key</code> documentation</a> for a list of key names under Pygame. All key names begin with <code>K_</code> and must be prefixed with <code>pygame.</code> since they are internal to Pygame, which, in turn, means you need to import the <code>pygame</code> module into your game to be able to modify default keys.</p>
+</div>
 </div>
 <div id="author" class="section level2">
 <h2>Author</h2>
