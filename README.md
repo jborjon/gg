@@ -218,4 +218,4 @@ If you discover bugs, make any changes or improvements, or decide to address any
 
 ## Special thanks
 
-A shout out to all my Young Engineers students at Madison Middle School in [Rexburg, Idaho](https://en.wikipedia.org/wiki/Rexburg,_Idaho), during the 2016-2017 and 2017-2018 school years for inspiring me to spend countless unpaid hours for about 4 grueling weeks in order to create this software. It was a labor of love. You guys are the best!
+A shout-out to all my Young Engineers students at Madison Middle School in [Rexburg, Idaho](https://en.wikipedia.org/wiki/Rexburg,_Idaho), during the 2016-2017 and 2017-2018 school years for inspiring me to spend countless unpaid hours for about 4 grueling weeks in order to create this software. It was a labor of love. You guys are the best!
