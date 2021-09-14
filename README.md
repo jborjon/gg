@@ -171,11 +171,11 @@ The following are all the attributes you can modify to make the game your own. M
 | `building_image` | The image file for the ground structure objects. | String | `None` |
 | `building_razed_image` | Optional image for buildings that are hit. | String | `None` |
 | `building_count` | How many buildings to start game with. Must be > 1. | Number | `4` |
-| `building_y_pos` | Y-coordinate of buildings; None means near bottom. | Number | `None` |
+| `building_y_pos` | Y-coordinate of buildings; `None` means near bottom. | Number | `None` |
 | `score_pos` | The position where the score is displayed on the screen. | Tuple | `(10, 10)` |
 | `score_factor` | How many points the player gets per hit. | Number | `1` |
 | `score_loss_factor` | Points lost when a building is destroyed. | Number | `10` |
-| `high_score_pos` | Where to display highscore; None means top-center. | Tuple | `None` |
+| `high_score_pos` | Where to display highscore; `None` means top-center. | Tuple | `None` |
 | `num_lives_pos` | The location of the player's remaining lives panel. | Tuple | `(10, 40)` |
 | `num_shots_pos` | The location of the player's remaining shots panel. | Tuple | `(10, 74)` |
 | `thumbnails_height` | The height of the lives and shots thumbnails. | Number | `24` |
