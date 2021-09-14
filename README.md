@@ -201,7 +201,7 @@ See the [`pygame.key` documentation](https://www.pygame.org/docs/ref/key.html) f
 
 ## Author
 
-Mr. [Joseph Borjon](https://www.linkedin.com/in/josephborjon), Young Engineers teacher at Madison Middle School.
+Mr. [Joseph Borjon](https://www.linkedin.com/in/joseph-borjon/), Young Engineers teacher at Madison Middle School.
 
 Feel free to contact me if you run into any issues. Email: work@josephborjon.com.
 
