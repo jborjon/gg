@@ -1,6 +1,6 @@
 # GameGenerator
 
-GameGenerator (GG) is a simple 2D game engine for creating Flak games in Python. It provides a customizable game environment for pedagogical purposes, without having to worry about writing algorithms or using complex programming constructs. It was created for Madison Middle School's Young Engineers.
+GameGenerator (GG) is a simple 2D game engine for creating Flak games in Python. It provides a customizable game environment for pedagogical purposes, without having to worry about writing algorithms or using complex programming constructs. It was created by yours truly for Madison Middle School's Young Engineers.
 
 
 ## What's a Flak game?
@@ -201,7 +201,7 @@ See the [`pygame.key` documentation](https://www.pygame.org/docs/ref/key.html) f
 
 ## Author
 
-Mr. [Joseph Borjon](https://www.linkedin.com/in/joseph-borjon/), Young Engineers teacher at Madison Middle School.
+Mr. [Joseph Borjon](https://www.linkedin.com/in/joseph-borjon/), former Young Engineers teacher at Madison Middle School in [Rexburg, Idaho](https://en.wikipedia.org/wiki/Rexburg,_Idaho).
 
 Feel free to contact me if you run into any issues. Email: work@josephborjon.com.
 
@@ -218,4 +218,4 @@ If you discover bugs, make any changes or improvements, or decide to address any
 
 ## Special thanks
 
-A shout-out to all my Young Engineers students at Madison Middle School in [Rexburg, Idaho](https://en.wikipedia.org/wiki/Rexburg,_Idaho), during the 2016-2017 and 2017-2018 school years for inspiring me to spend countless unpaid hours for about 4 grueling weeks in order to create this software. It was a labor of love. You guys are the best!
+A shout-out to all my Young Engineers students at Madison Middle School during the 2016-2017 and 2017-2018 school years for inspiring me to spend countless unpaid hours for about 4 grueling weeks in order to create this software. It was a labor of love. You guys are the best!
