@@ -1,6 +1,6 @@
 # GameGenerator
 
-GameGenerator (GG) is a simple 2D game engine for creating Flak games in Python. It provides a customizable game environment for pedagogical purposes, without having to worry about writing algorithms or using complex programming constructs. It was created by yours truly for Madison Middle School's Young Engineers.
+GameGenerator (GG) is a simple 2D game engine for creating Flak games in Python. It provides a customizable game environment for pedagogical purposes, freeing you from having to write algorithms and use complex programming constructs. It was created by yours truly for Madison Middle School's Young Engineers.
 
 
 ## What's a Flak game?
