@@ -142,7 +142,7 @@ The following are all the attributes you can modify to make the game your own. M
 | `name` | The name of the game, displayed on the window title bar, if there is one. | String | `'GG Flak'` |
 | `images_dir` | The path of the directory where the images are. | String | `None` |
 | `window_icon` | File name of the icon to display next to the name. | String | `None` |
-| `splash_image` | The image that covers the screen at the beginninng. | String | `None` |
+| `splash_image` | The image that covers the screen at the beginning. | String | `None` |
 | `screen_width` | The window width in pixels if not fullscreen. | Number | `800` |
 | `aspect_ratio` | The aspect ratio of the window if not fullscreen. | Number | `1.7778` |
 | `is_fullscreen` | Whether the window covers the entire screen. | Boolean | `False` |
