@@ -213,7 +213,7 @@ You may modify and redistribute this project under certain restrictions; see the
 
 ## Contributing
 
-If you discover bugs, make any changes or improvements, or decide to address any if the project issues, I'd love to know about it. We may even add it to the main branch. Please contact me via [LinkedIn](https://www.linkedin.com/in/josephborjon) or email at work@josephborjon.com.
+If you discover bugs, make any changes or improvements, or decide to address any if the project issues, I'd love to know about it. We may even add it to the main branch. Please contact me via [LinkedIn](https://www.linkedin.com/in/joseph-borjon/) or email at work@josephborjon.com.
 
 
 ## Special thanks
